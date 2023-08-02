@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png",
+    "name": "John Doe",
+    "isOnline": true
+  },
+  {
+    "id": 2,
+    "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Photo.png",
+    "name": "Jane Smith",
+    "isOnline": false
+  },
+  {
+    "id": 3,
+    "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Pic.png",
+    "name": "Mike Johnson",
+    "isOnline": true
+  },
+  {
+    "id": 4,
+    "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-HD-Image.png",
+    "name": "Emily Brown",
+    "isOnline": true
+  },
+  {
+    "id": 5,
+    "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-No-Background.png",
+    "name": "Alex Anderson",
+    "isOnline": false
+  }
+]
