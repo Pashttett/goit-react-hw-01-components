@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TransactionTable, TableHeader, TableRow, TableCell } from './transaction.styled';
-import TransactionHistoryItem from '../TransactionHistoryItem/TransactionHistoryItem'; // Додайте імпорт для TransactionHistoryItem
+import { TransactionTable, TableHeader, TableRow } from './transaction.styled'; // Видалено імпорт для TableCell
+import TransactionHistoryItem from '../TransactionHistoryItem/TransactionHistoryItem';
 
 const TransactionHistory = ({ items }) => {
   return (
