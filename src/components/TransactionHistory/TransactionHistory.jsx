@@ -1,10 +1,7 @@
 import React from 'react';
-import {
-  TransactionTable,
-  TableHeader,
-  TableRow,
-  TableCell,
-} from './transaction.styled';
+import PropTypes from 'prop-types';
+import { TransactionTable, TableHeader, TableRow, TableCell } from './transaction.styled';
+import TransactionHistoryItem from '../TransactionHistoryItem/TransactionHistoryItem'; // Додайте імпорт для TransactionHistoryItem
 
 const TransactionHistory = ({ items }) => {
   return (
@@ -16,18 +13,29 @@ const TransactionHistory = ({ items }) => {
           <TableHeader>Currency</TableHeader>
         </TableRow>
       </thead>
-
       <tbody>
         {items.map((transaction) => (
-          <TableRow key={transaction.id}>
-            <TableCell>{transaction.type}</TableCell>
-            <TableCell>{transaction.amount}</TableCell>
-            <TableCell>{transaction.currency}</TableCell>
-          </TableRow>
+          <TransactionHistoryItem
+            key={transaction.id}
+            type={transaction.type}
+            amount={transaction.amount}
+            currency={transaction.currency}
+          />
         ))}
       </tbody>
     </TransactionTable>
   );
+};
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default TransactionHistory;
